@@ -1,0 +1,18 @@
+#include<Servo.h>
+
+Servo mygoodservo;
+
+void setup(){
+  
+  mygoodservo.attach(9);
+}
+
+void loop(){
+ mygoodservo.write(0);
+ delay(1000);
+ mygoodservo.write(90); 
+ delay(1000); 
+ mygoodservo.write(180); 
+ delay(1000); 
+  
+}
